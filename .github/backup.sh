@@ -8,5 +8,8 @@ for path in $(curl -sL "${url}/_api/pages.list?path=/" | jq -r '.pages[].path');
     if [ ${dir} ];then
         mkdir -p ${dir}
     fi
+    if [ "${file}" = ".md" ];then
+        file="index.md"
+    fi
     curl -sL "${url}/_api/pages.get?path=${path}" | jq -r '.page.revision.body' > "${file}"
 done
