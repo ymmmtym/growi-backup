@@ -20,12 +20,10 @@ jobs:
 
     - name: Run shell script
       run: bash .github/backup.sh
-    
-    - name: Define shell var of git status
-      run: status=$(git status -s)
 
     - name: Add and commit files
       run: |
+        status=$(git status -s)
         if [ "${status}" ]; then
           git add .
           git config --local user.email "action@github.com"
