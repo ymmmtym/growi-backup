@@ -1,5 +1,5 @@
 # Cloud Service
-まずはローカル環境にて開発
+まずはローカル環境にて開発する
 ソースコードをgithub/gitlabにup
 JenkinsやCircleCIなどのCI/CDツールを用いて商用環境へデプロイ
 

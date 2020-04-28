@@ -79,4 +79,3 @@ jupyter notebook --ip=* --no-browser
 
 ## Samples
 <script src="https://gist-it.appspot.com/https://github.com/ymmmtym/engneer-tutorial/blob/master/scripts/backend/python/lib/scraping.py"></script>
-
