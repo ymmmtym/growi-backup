@@ -1,7 +1,7 @@
 name: Create backup of growi markdown files
 on:
   schedule:
-    - cron:  '*/15 * * * *'
+    - cron:  '*/10 * * * *'
   push:
     branches:
       - master
@@ -21,12 +21,17 @@ jobs:
     - name: Run shell script
       run: bash .github/backup.sh
     
-    - name: Commit files
+    - name: Define shell var of git status
+      run: status=$(git status -s)
+
+    - name: Add and commit files
       run: |
-        git add .
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "Add changes" -a
+        if [ "${status}" ]; then
+          git add .
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Add changes" -a
+        fi
 
     - name: Push changes
       uses: ad-m/github-push-action@master
