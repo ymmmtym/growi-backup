@@ -1,7 +1,7 @@
 # Cloud Service
-まずはローカル環境にて開発する
-ソースコードをgithub/gitlabにup
-JenkinsやCircleCIなどのCI/CDツールを用いて商用環境へデプロイ
+1.  まずはローカル環境にて開発する
+2.  ソースコードをgithub/gitlabにup
+3.  JenkinsやCircleCIなどのCI/CDツールを用いて商用環境へデプロイ
 
 ## Google Cloud Platform
 https://cloud.google.com/free/docs/gcp-free-tier?hl=ja#always-free
