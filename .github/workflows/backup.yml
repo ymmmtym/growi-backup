@@ -23,6 +23,7 @@ jobs:
 
     - name: Add and commit files
       run: |
+        export TZ="Asia/Tokyo"
         status=$(git status -s)
         if [ "${status}" ]; then
           git add .
