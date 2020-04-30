@@ -1,7 +1,11 @@
 #!/bin/bash
 
-url="https://ymmmtym.growi.cloud"
+export url="https://ymmmtym.growi.cloud"
 
+# delete without readme
+ls | grep -v -E "^README.md" | xargs rm -rf
+
+# get markdown files
 for path in $(curl -sL "${url}/_api/pages.list?path=/" | jq -r '.pages[].path'); do
     dir=$(echo ${path%/*} | cut -c 2-)
     file=$(echo "${path#*/}.md" | nkf -w --url-input)
