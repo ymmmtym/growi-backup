@@ -25,7 +25,11 @@ https://azure.microsoft.com/ja-jp/free/
 ## Oracle
 ### Oracle Cloud
 #### パブリックIPの設定
-コンピュートインスタンスインスタンスの詳細アタッチされたVNICVNICの詳細
+コンピュート
+インスタンス
+インスタンスの詳細
+アタッチされたVNIC
+VNICの詳細
 IPアドレス
 ## Sales Force
 ### Heroku
