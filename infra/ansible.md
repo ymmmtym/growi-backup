@@ -1,7 +1,13 @@
 # Ansible
+
+<https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html>
+
 ## Samples
+
 ### gathering facs error
+
 syntax error of sudoers file
+
 ```bash=
 cat /etc/sudoers.d/ymmmtym
 
