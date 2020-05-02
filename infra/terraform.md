@@ -1,7 +1,8 @@
 # Terraform
 ## Docker
 ```bash=
-touch terraform.tfvars # 
+touch terraform.tfvars
+touch terraform.tfstate
 
 docker run -it -v $PWD:/app -w /app hashicorp/terraform init
 ```
