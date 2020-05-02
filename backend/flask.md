@@ -28,6 +28,8 @@ python3 -m venv --clear .venv
 pip install -U pip
 pip install Flask
 pip install Flask-SQLAlchemy # DB
+pip install Flask-Script
+pip install coverage
 ```
 
 ### Make requirements.txt
@@ -38,19 +40,35 @@ pip freeze > requirements.txt
 
 
 ## Launch Flask
-### section10
 
 ```bash=
 export FLASK_APP=section10/application/server.py
 flask run --host=0.0.0.0
 ```
 
+coverage
+
+```bash=
+cd section36/application
+echo -e "[run]\nsource = ./flask_blog" > .coveragerc
+coverage run -m unittest
+coverage report -m
+coverage html
+```
+
 ## To Do
 
 - [ ] ディレクトリ構造
+    - [ ] init.py
+    - [ ] config
 - [ ] session
+    - [ ] secret key
+    - [ ] デコレータ
 - [ ] flash
 - [ ] db
+- [ ] models
+- [ ] CRUD
+- [ ] coverage
 
 
 ## Reference
