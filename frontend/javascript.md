@@ -48,3 +48,7 @@ Therefore, an error may occur or the output may not be performed as expected.
 
 ### local variables
 Variables used only in for statements and functions
+
+## Reference
+<https://github.com/baku89/pentool>
+<https://github.com/meenie/band.js>
