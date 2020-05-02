@@ -51,3 +51,18 @@ for path in $(curl -sL "https://ymmmtym.growi.cloud/_api/pages.list?path=/" | jq
     curl -sL "https://ymmmtym.growi.cloud/_api/pages.get?path=${path}" | jq -r '.page.revision.body'
 done
 ```
+
+
+## Discogs
+### Favorite list
+-  https://www.discogs.com/ja/seller/alain.v2/profile
+-  https://www.discogs.com/ja/user/GESSCOM
+-  https://www.discogs.com/ja/seller/Boom_Service/profile
+-  https://www.discogs.com/ja/seller/bordentownrecords/profile
+-  https://www.discogs.com/ja/seller/1207vinyl.dk/profile
+-  https://www.discogs.com/ja/user/beatboprecords
+
+
+### Temporary list
+-  https://www.discogs.com/ja/user/Analogy_Mountain
+
