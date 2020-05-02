@@ -74,8 +74,16 @@ run notebook
 jupyter notebook --ip=* --no-browser
 ``` 
 
+## Julia
+<https://github.com/bicycle1885/Julia-Tutorial>
+<https://github.com/JuliaLang/julia>
+
+## Kaggle
+<https://github.com/Kaggle/kaggle-api>
+
 ## Reference
 [Python Docs](https://docs.python.org/3/)
+<https://github.com/GoogleCloudPlatform/python-docs-samples>
 
 ## Samples
 <script src="https://gist-it.appspot.com/https://github.com/ymmmtym/engneer-tutorial/blob/master/scripts/backend/python/lib/scraping.py"></script>
