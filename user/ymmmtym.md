@@ -41,6 +41,11 @@ for board in $(curl -s "https://trello.com/1/members/${user}/boards?key=${key}&t
 done
 ```
 
+#### Reference
+<https://se.miyabikno-jobs.com/python-api-trello/>
+<https://thinkami.hatenablog.com/entry/2016/03/01/003050>
+<http://blog.serverworks.co.jp/tech/2016/05/16/trello-api/>
+
 ## Wiki.js
 ### docker
 [Doc](https://docs.requarks.io/install/docker)
