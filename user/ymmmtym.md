@@ -1,5 +1,9 @@
-# Home
-https://gitpress.io/u/1192
+# ymmmtym
+## All Pages
+$lsx()
+
+## Public Pages
+<https://gitpress.io/u/1192>
 
 ## Roadmap
 <https://github.com/kamranahmedse/developer-roadmap>
@@ -15,7 +19,7 @@ https://gitpress.io/u/1192
 ### Rest API
 
 ```bash
-# var
+# vars
 user=<>
 key=<>
 token=<>
