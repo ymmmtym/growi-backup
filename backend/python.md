@@ -4,6 +4,7 @@
 -  show directory has python script
 -  initialize when import modules
 
+読み込むmodule名と実行ファイル名が同一の場合エラーが起きるので注意
 
 ## Class
 By describing "class: Meta", you can define something that is not defined in forms.ModelForm.
