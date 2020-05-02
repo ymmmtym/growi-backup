@@ -27,6 +27,7 @@ python3 -m venv --clear .venv
 ```bash=
 pip install -U pip
 pip install Flask
+pip install Flask-SQLAlchemy # DB
 ```
 
 ### Make requirements.txt
@@ -34,6 +35,7 @@ pip install Flask
 ```bash=
 pip freeze > requirements.txt
 ```
+
 
 ## Launch Flask
 ### section10
@@ -45,8 +47,10 @@ flask run --host=0.0.0.0
 
 ## To Do
 
-- [ ] ディレクトリ構造を理解する(config含む)
-- [ ] sessionを理解する
+- [ ] ディレクトリ構造
+- [ ] session
+- [ ] flash
+- [ ] db
 
 
 ## Reference
