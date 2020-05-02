@@ -67,9 +67,15 @@ remove cache
 git rm -r --cached ${file}
 ```
 
+#### Reset
+```bash=
+git checkout . --
+git clean -df
+```
+
 ## Reference
-https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-https://github.com/github/gitignore
+<https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
+<https://github.com/github/gitignore>
 [チーム開発におけるプルリクの作法](https://qiita.com/ikuwow/items/fb52a54c086398eb5b92)
 [誰にとってもわかりやすいGitのコミットメッセージを考える](https://www.tam-tam.co.jp/tipsnote/program/post16686.html)
 
