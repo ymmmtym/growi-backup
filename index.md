@@ -5,5 +5,7 @@
 | --------- |
 | $lsx(/)   |
 
+https://ymmmtym.growi.cloud/_search?q=tag:reading
+
 # Trash
 $lsx(/trash)
