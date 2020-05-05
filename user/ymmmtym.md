@@ -10,6 +10,7 @@ $lsx()
 
 ## tmp
 <https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes>
+<https://gitter.im/>
 
 # API
 ## Tools
