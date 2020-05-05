@@ -19,8 +19,10 @@ rbenv local ${rbversion}
 
 rbenv gemset list
 gemsetname="test"
-rbenv gemset create ${gemsetname} 
+rbenv gemset create ${rbversion} ${gemsetname} 
 rbenv gemset init ${gemsetname}
+
+gem list
 ```
 
 uninstall
