@@ -8,6 +8,8 @@ rubyのバージョン管理
 
 ## rbenv-gemset
 
+install
+
 ```shell=
 mkdir test-dir && cd test-dir
 
@@ -19,6 +21,16 @@ rbenv gemset list
 gemsetname="test"
 rbenv gemset create ${gemsetname} 
 rbenv gemset init ${gemsetname}
+```
+
+uninstall
+
+```shell=
+rbenv uninstall ${rbversion}
+
+# If old files exist
+rm -fr ~/.rbenv/versions/${rbversion}
+rbenv rehash
 ```
 
 ### Reference
