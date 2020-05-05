@@ -9,9 +9,16 @@ rubyのバージョン管理
 ## rbenv-gemset
 
 ```shell=
-rbenv gemset list
-rbenv gemset create 2.1.0 sample
+mkdir test-dir && cd test-dir
 
+rbenv versions
+rbversion="2.7.1"
+rbenv local ${rbversion}
+
+rbenv gemset list
+gemsetname="test"
+rbenv gemset create ${gemsetname} 
+rbenv gemset init ${gemsetname}
 ```
 
 ### Reference
