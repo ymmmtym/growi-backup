@@ -73,6 +73,9 @@ git checkout . --
 git clean -df
 ```
 
+## Zenhub
+"Closes #{issue_number}"
+
 ## Reference
 <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
 <https://github.com/github/gitignore>
