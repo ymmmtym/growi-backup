@@ -11,6 +11,8 @@ rubyのバージョン管理
 install
 
 ```shell=
+rbenv init
+
 mkdir test-dir && cd test-dir
 
 rbenv versions
