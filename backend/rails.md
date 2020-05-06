@@ -1,5 +1,6 @@
 # Rails
 MVC
+
 ## Install
 ```shell=
 gem install rails -v '6.0.0'
