@@ -7,8 +7,11 @@ on:
       - master
 
 jobs:
-  build:
+  backup:
+    name: backup
     runs-on: ubuntu-18.04
+    env:
+      URL: "https://ymmmtym.growi.cloud"
 
     steps:
     - uses: actions/checkout@master
@@ -19,7 +22,7 @@ jobs:
         sudo apt install -y jq nkf
 
     - name: Run shell script
-      run: bash .github/backup.sh
+      run: bash .github/backup.sh ${URL}
 
     - name: Add and commit files
       run: |
