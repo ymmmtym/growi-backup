@@ -14,6 +14,11 @@ cd ${APP}
 
 rails s # rails server
 rails c # rails console
+rails g model # rails generate model
+rails g controller
+rails g scaffold
+rails destroy
+rails dbconsole
 ```
 
 
