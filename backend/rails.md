@@ -2,14 +2,17 @@
 MVC
 
 ## Install
+
 ```shell=
 gem install rails -v '6.0.0'
+```
 
+## Create App
+```shell=
 rails new ${APP}
-
 cd ${APP}
-rails s # rails server
 
+rails s # rails server
 rails c # rails console
 ```
 
