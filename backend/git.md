@@ -73,8 +73,16 @@ git checkout . --
 git clean -df
 ```
 
-## Zenhub
+## Github
+issueをクローズする時、プルリクのコミットメッセージの頭を以下の様にする。
 "Closes #{issue_number}"
+
+### GitHub CLI
+<https://dev.classmethod.jp/articles/shuntaka9576-gh/>
+
+### hub
+<https://dev.classmethod.jp/articles/hub/>
+
 
 ## Reference
 <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
