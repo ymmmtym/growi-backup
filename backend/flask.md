@@ -65,8 +65,8 @@ coverage html
     - [ ] secret key
     - [ ] デコレータ
 - [x] flash
-- [ ] db
-- [ ] models
+- [x] db
+- [x] models
 - [ ] CRUD
 - [ ] coverage
 
