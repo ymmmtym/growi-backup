@@ -59,7 +59,7 @@ coverage html
 ## To Do
 
 - [ ] ディレクトリ構造
-    - [ ] init.py
+    - [ ] \_\_init\_\_.py
     - [ ] config
 - [ ] session
     - [ ] secret key
