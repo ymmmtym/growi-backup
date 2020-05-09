@@ -58,13 +58,13 @@ coverage html
 
 ## To Do
 
-- [ ] ディレクトリ構造
-    - [ ] \_\_init\_\_.py
-    - [ ] config
+- [x] ディレクトリ構造
+    - [x] \_\_init\_\_.py
+    - [x] config
 - [ ] session
     - [ ] secret key
     - [ ] デコレータ
-- [ ] flash
+- [x] flash
 - [ ] db
 - [ ] models
 - [ ] CRUD
