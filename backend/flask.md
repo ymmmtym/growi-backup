@@ -56,6 +56,14 @@ coverage report -m
 coverage html
 ```
 
+## DB
+```python
+from app import db
+from app.models.users import User
+
+```
+
+
 ## Flask-login
 <https://qiita.com/msrks/items/d9c327dd81749ec01d1d>
 

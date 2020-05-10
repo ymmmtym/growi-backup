@@ -62,6 +62,24 @@ If workdir not exist, created automatelly.
 
 ## Docker compose
 
+### https-portal
+example.com.localを127.0.0.1に名前解決させる。
+
+```yaml
+https-portal:
+  image: steveltn/https-portal:1
+  ports:
+    - '80:80'
+    - '443:443'
+  links:
+    - keywoo
+  restart: always
+  environment:
+    DOMAINS: 'example.com.local -> http://app:5000'
+    STAGE: 'local' # Don't use production until staging works
+    # FORCE_RENEW: 'true'
+```
+
 ## Samples
 <https://github.com/SteveLTN/https-portal>
 
