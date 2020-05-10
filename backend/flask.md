@@ -79,4 +79,4 @@ coverage html
 <https://github.com/vinta/awesome-python>
 <https://qiita.com/croquette0212/items/9b4dc5377e7d6f292671>
 <https://qiita.com/yuucu/items/dea6e7a0a655af8fdb91>
-
+<https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login>
