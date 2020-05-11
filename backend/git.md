@@ -83,6 +83,9 @@ issueをクローズする時、プルリクのコミットメッセージの頭
 ### hub
 <https://dev.classmethod.jp/articles/hub/>
 
+### README
+<https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
+<https://github.com/dbader/readme-template>
 
 ## Reference
 <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
