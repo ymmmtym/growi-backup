@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       URL: "https://ymmmtym.growi.cloud"
+    if: contains(github.event.head_commit.message, '[ci skip]') == false
 
     steps:
     - uses: actions/checkout@master
@@ -22,14 +23,18 @@ jobs:
         sudo apt install -y jq nkf
 
     - name: Check server responce
-      run: curl -s ${URL} -o /dev/null -w %{http_code} --connect-timeout 60
+      id: responce
+      run: |
+        echo "::set-output name=responce::$(curl -s ${URL} -o /dev/null -w %{http_code} --connect-timeout 60)"
 
     - name: Run shell script
       run: bash .github/backup.sh ${URL}
-      if: github.event.head_commit.message == '200'
+      if: ${{ steps.responce.outputs.responce }} == '200'
 
     - name: Run git status
-      run: git status -s
+      id: status
+      run: |
+        echo "::set-output name=status::$(git status -s)"
 
     - name: Add and commit files
       run: |
@@ -38,10 +43,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Add changes at $(date "+DATE: %Y-%m-%d TIME: %H:%M:%S")" -a
-      if: github.event.head_commit.message
+      if: ${{ steps.status.outputs.status }}
 
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-      if: github.event.head_commit.message
+      if: ${{ steps.status.outputs.status }}
