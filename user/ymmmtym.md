@@ -5,6 +5,10 @@ $lsx()
 ## Public Pages
 <https://gitpress.io/u/1192>
 
+## Maintainance
+
+<https://uptimerobot.com/dashboard#mainDashboard>
+
 ## Roadmap
 <https://github.com/kamranahmedse/developer-roadmap>
 
