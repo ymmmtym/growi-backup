@@ -1,7 +1,10 @@
 # Cloud Service
+
+[ずっと無料で使えるクラウドの「Free Tier」主要サービスまとめ。2020年版](https://www.publickey1.jp/blog/20/free_tier2020.html)
+
 1.  まずはローカル環境にて開発する
-2.  ソースコードをgithub/gitlabにup
-3.  JenkinsやCircleCIなどのCI/CDツールを用いて商用環境へデプロイ
+2.  ソースコードをgithubにup
+3.  Github ActionsやCircleCIなどのCI/CDツールを用いて商用環境へデプロイ
 
 ## Google Cloud Platform
 https://cloud.google.com/free/docs/gcp-free-tier?hl=ja#always-free
