@@ -18,6 +18,9 @@ https://cloud.google.com/free/docs/gcp-free-tier?hl=ja#always-free
 ### Firebase
 無料プランあり
 
+#### Reference
+<https://www.non-standardworld.co.jp/20476/>
+
 ## AWS
 ### Lambda
 
