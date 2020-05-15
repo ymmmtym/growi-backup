@@ -89,6 +89,12 @@ import requests
 
 inspect.getsource(requests.get)
 ```
+
+## vars
+```python
+vars(obj)
+```
+
 ## Reference
 [Python Docs](https://docs.python.org/3/)
 <https://github.com/GoogleCloudPlatform/python-docs-samples>
