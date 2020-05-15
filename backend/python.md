@@ -82,6 +82,13 @@ jupyter notebook --ip=* --no-browser
 ## Kaggle
 <https://github.com/Kaggle/kaggle-api>
 
+## inspect
+```python
+import inspect
+import requests
+
+inspect.getsource(requests.get)
+```
 ## Reference
 [Python Docs](https://docs.python.org/3/)
 <https://github.com/GoogleCloudPlatform/python-docs-samples>
