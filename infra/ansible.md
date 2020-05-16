@@ -21,5 +21,4 @@ cat /etc/sudoers.d/ymmmtym
 ## Reference
 [使えばきっと一目置かれるAnsibleのちょっと高度な機能](https://qiita.com/dkuji/items/7d69adef06448458e6d3)
 <https://github.com/geerlingguy/mac-dev-playbook>
-
-
+<https://qiita.com/katsuhisa__/items/15236253e72a8de74b00>
