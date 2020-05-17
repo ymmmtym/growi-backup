@@ -1,6 +1,6 @@
 # ymmmtym
 ## All Pages
-$lsx(/user/ymmmtym)
+$lsx()
 
 ## Public Pages
 <https://gitpress.io/u/1192>
