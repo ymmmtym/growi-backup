@@ -44,7 +44,7 @@ docker network prune
 docker system prune --volumes
 ```
 
-### tag
+### Tag
 
 update my image's tag
 
