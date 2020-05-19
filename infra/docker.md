@@ -22,10 +22,10 @@ docker cp -r ${container_id}:${input} ${output}
 
 ### run with mounting volumes
 ```bash=
-docker run -v /home/hoge/shared:/shared -d -it ubuntu /bin/bash
+docker run -v /home/hoge/shared:/shared-it ubuntu /bin/bash
 ```
 
-### show `<none>` images
+### show dangling (`<none>`) images
 ```bash=
 docker images -f "dangling=true"
 ```
@@ -45,25 +45,46 @@ docker system prune --volumes
 ```
 
 ### tag
+
+update my image's tag
+
 ```bash=
 docker pull ${USER}/${image}
 docker tag ${USER}/${image} ${USER}/${image}:${tag}
 docker push ${USER}/${image}:${tag}
 ```
 
+search tags of the image
+
+```bash=
+curl -s https://registry.hub.docker.com/v1/repositories/${image}/tags | jq -r '.[].name'
+```
+
+
 ## Dockerhub
+
 1. puth image to dockerhub
 2. connect to github
 3. setting automated build
 
 ## Dockerfile
-default directory is /
-If workdir not exist, created automatelly.
+
+### Roles
+
+- default directory is /
+- If workdir not exist, created automatelly.
 
 ## Docker compose
 
+## Samples
 ### https-portal
-example.com.localを127.0.0.1に名前解決させる。
+
+<https://github.com/SteveLTN/https-portal>
+
+#### Usage
+
+1. example.com.localを127.0.0.1に名前解決させる。
+2. app(container name):5000(container exposed port)
 
 ```yaml
 https-portal:
@@ -72,16 +93,13 @@ https-portal:
     - '80:80'
     - '443:443'
   links:
-    - keywoo
+    - app
   restart: always
   environment:
     DOMAINS: 'example.com.local -> http://app:5000'
     STAGE: 'local' # Don't use production until staging works
     # FORCE_RENEW: 'true'
 ```
-
-## Samples
-<https://github.com/SteveLTN/https-portal>
 
 ## Reference
 <https://y-ohgi.com/introduction-docker/>
