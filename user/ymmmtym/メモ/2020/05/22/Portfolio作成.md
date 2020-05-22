@@ -1,4 +1,6 @@
-# Portfolioに重要な要素
+# Portfolio作成
+
+## Portfolioに重要なチェック項目
 
 - アプリケーションとして十分な機能がある
 - UI/UXが整っている
