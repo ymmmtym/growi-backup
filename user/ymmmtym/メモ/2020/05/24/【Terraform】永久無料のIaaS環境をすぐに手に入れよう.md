@@ -11,7 +11,7 @@
 | Provider              | Service               | Spec                              |
 | --------------------- | --------------------- | --------------------------------- |
 | Google Cloud Platform | Google Compute Engine | CPU:0.2 Memory:0.6GB Storage:30GB |
-| Oracle Cloud          | Oracle Cloud Compute  | OCPU:1/8日 Memory:1GB             |
+| Oracle Cloud Infrastructure | Oracle Cloud Compute  | OCPU:1/8日 Memory:1GB       |
 
 \* Google Compute Engineは**1台**まで無料
 \* Oracle Cloud Computeは**2台**まで無料
@@ -26,15 +26,41 @@
 
 # 作成手順
 
-## 1. クラウドプロバイダーに登録する
-言うまでもないですが、クラウドサービスを利用するには登録を済ましておく必要があります。
+利用するクラウドサービスに登録を済ませておいてください。
 
-## 2. credential情報を取得する
+GCP: <https://cloud.google.com/getting-started?hl=ja>
+Oracle Cloud: <https://www.oracle.com/jp/cloud/free/?intcmp=ocom-hpjp>
 
-## 3. ssh公開鍵を作成する
+## 1. credential情報を取得する
 
-## 4. Terraform Cloudに登録する(Option)
+### GCP
 
+[サービスアカウント](https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?supportedpurview=project)のページを開いて、Terraformの実行権限を付与する必要があります。
+
+以下、[公式ページ](https://cloud.google.com/iam/docs/creating-managing-service-accounts?hl=ja#iam-service-accounts-create-console)から抜粋
+
+> Cloud Console で [サービス アカウント] ページを開きます。
+> 
+> [サービス アカウント] ページを開く
+> 
+> [プロジェクトを選択] をクリックし、プロジェクトを選択して [開く] をクリックします。
+> 
+> [サービス アカウントを作成] をクリックします。
+> 
+> サービス アカウント名（わかりやすい表示名）、オプションの説明を入力し、サービス アカウントに付与するロールを選択して、[保存] をクリックします。
+
+その後の流れは以下の様にします。
+
+1. サービスアカウントの右側に点々をクリックして「鍵を作成」をクリックする
+2. 「JSON」を選択して、作成をクリックする
+3. Jsonファイルがダウンロードされる
+
+
+## 2. ssh公開鍵を作成する
+
+## 3. Terraform Cloudに登録する(Option)
+
+<https://dev.classmethod.jp/articles/terraform-cloud/>
 
 ## Reference
 
