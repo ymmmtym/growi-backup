@@ -37,7 +37,7 @@ Oracle Cloud: <https://www.oracle.com/jp/cloud/free/?intcmp=ocom-hpjp>
 
 [サービスアカウント](https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?supportedpurview=project)のページを開いて、Terraformの実行権限を付与する必要があります。
 
-以下、[公式ページ](https://cloud.google.com/iam/docs/creating-managing-service-accounts?hl=ja#iam-service-accounts-create-console)から抜粋
+以下、[公式ページ](https://cloud.google.com/iam/docs/creating-managing-service-accounts?hl=ja#iam-service-accounts-create-console)から抜粋です。
 
 > Cloud Console で [サービス アカウント] ページを開きます。
 > 
@@ -53,7 +53,7 @@ Oracle Cloud: <https://www.oracle.com/jp/cloud/free/?intcmp=ocom-hpjp>
 
 1. サービスアカウントの右側に点々をクリックして「鍵を作成」をクリックする
 2. 「JSON」を選択して、作成をクリックする
-3. Jsonファイルがダウンロードされる
+3. Jsonファイルがダウンロードされる。任意の名前に変更する（今回は**credentials.json**）
 
 
 ## 2. ssh公開鍵を作成する
