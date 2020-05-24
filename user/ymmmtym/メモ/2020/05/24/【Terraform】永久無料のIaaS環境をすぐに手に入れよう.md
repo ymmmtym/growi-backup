@@ -19,9 +19,18 @@ https://docs.cloud.oracle.com/ja-jp/iaas/Content/FreeTier/freetier.htm
 補足）
 スペック確認は実際に作成されたVMで確認しました。
 
-## 事前準備
+## 作成手順
+
 ### 1. クラウドプロバイダーに登録する
-### 2. ssh公開鍵を作成しておく
+言うまでもないですが、クラウドサービスを利用するには登録を済ましておく必要があります。
+
+### 2. credential情報を取得する
+
+### 3. ssh公開鍵を作成する
+
+### 4. Terraform Cloudに登録する(Option)
+
+## リソース作成
 
 ## Reference
 
