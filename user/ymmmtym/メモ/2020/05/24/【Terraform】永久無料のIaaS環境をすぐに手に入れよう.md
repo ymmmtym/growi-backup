@@ -1,6 +1,11 @@
 # 【Terraform】always freeのIaaS環境をすぐに手に入れよう
 
-タイトルにある通り、**always free**の**Iaas**環境(Compute)を手に入れよう。
+# はじめに
+
+タイトルにある通り、**always free**の**Iaas**環境(Compute)をすぐに手に入れたいと思います。
+
+# 作成するIaaS環境
+
 提供しているのは2つのプロバイダーで、スペックは以下の通りです。
 
 | Provider              | Service               | Spec                              |
@@ -11,26 +16,25 @@
 \* Google Compute Engineは**1台**まで無料
 \* Oracle Cloud Computeは**2台**まで無料
 
+[Google Cloud の無料枠](https://cloud.google.com/free/docs/gcp-free-tier?hl=ja)
+[Oracle CloudのFree Tier](https://docs.cloud.oracle.com/ja-jp/iaas/Content/FreeTier/freetier.htm)
 
-https://docs.cloud.oracle.com/ja-jp/iaas/Content/FreeTier/freetier.htm
-
-ということで、計3台のVMが永久無料で使えるのでTerraformで簡単に作成してみる
+ということで、計3台のVMが永久無料で使えるのでTerraformで簡単に作成してみます。
 
 補足）
 スペック確認は実際に作成されたVMで確認しました。
 
-## 作成手順
+# 作成手順
 
-### 1. クラウドプロバイダーに登録する
+## 1. クラウドプロバイダーに登録する
 言うまでもないですが、クラウドサービスを利用するには登録を済ましておく必要があります。
 
-### 2. credential情報を取得する
+## 2. credential情報を取得する
 
-### 3. ssh公開鍵を作成する
+## 3. ssh公開鍵を作成する
 
-### 4. Terraform Cloudに登録する(Option)
+## 4. Terraform Cloudに登録する(Option)
 
-## リソース作成
 
 ## Reference
 
