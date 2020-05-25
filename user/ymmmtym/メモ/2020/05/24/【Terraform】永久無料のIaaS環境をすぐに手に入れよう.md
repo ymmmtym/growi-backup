@@ -55,6 +55,8 @@ Oracle Cloud: <https://www.oracle.com/jp/cloud/free/?intcmp=ocom-hpjp>
 2. 「JSON」を選択して、作成をクリックする
 3. Jsonファイルがダウンロードされる。任意の名前に変更する（今回は**credentials.json**）
 
+参考）
+<https://www.niandc.co.jp/sol/tech/date20191002_1814.php>
 
 ## 2. ssh公開鍵を作成する
 
