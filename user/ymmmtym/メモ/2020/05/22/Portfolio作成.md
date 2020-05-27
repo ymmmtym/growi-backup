@@ -14,4 +14,3 @@
 ## Reference
 <https://nsuzuki7713.github.io/portfolio/>
 <https://hodalab.com/portfolio/>
-<https://www.npmjs.com/package/@fortawesome/vue-fontawesome>
