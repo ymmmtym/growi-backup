@@ -1,6 +1,7 @@
 # Cloud Service
 
 [ずっと無料で使えるクラウドの「Free Tier」主要サービスまとめ。2020年版](https://www.publickey1.jp/blog/20/free_tier2020.html)
+[【AWS, GCP, Azure, OracleCloud, Firebase】無料で使えるクラウドのサーバリソースまとめ【2020年1月版】](https://qiita.com/goyae/items/196221169391dd44125d)
 
 1.  まずはローカル環境にて開発する
 2.  ソースコードをgithubにup

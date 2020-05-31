@@ -18,3 +18,4 @@ cat ${dumpfile} | psql -U ${username}
 ### Reference
 
 [[PostgreSQL] よく使うコマンドまとめ](https://dev.classmethod.jp/articles/postgresql-organize-command/)
+[PostgreSQLコマンドチートシート](https://qiita.com/Shitimi_613/items/bcd6a7f4134e6a8f0621)
