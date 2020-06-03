@@ -28,10 +28,8 @@ CentOS 7.XのDockerコンテナにdnfをインストールする。
 ```
 [dnfuser@localhost ~]$ docker run -it --rm centos:7 bash
 
-
-
 [root@3b4a088d7e6f /]# yum update -y
-[root@3b4a088d7e6f /]# yum install -y python3-setuptools gcc python3-devel
+[root@3b4a088d7e6f /]# yum install -y epel-release
 [root@3b4a088d7e6f /]# yum install -y dnf
 
 [root@3b4a088d7e6f /]# head -n1 /usr/bin/dnf
@@ -49,17 +47,16 @@ python3.Xをインストールした後にも試したが、`dnf`は2.Xになっ
 
 ```yml:playbook.yml
 - name: Install epel-release
-  dnf:
+  yum:
     name: epel-release
     state: present
   become: yes
 
 - name: Install dnf
-  dnf:
+  yum:
     name: dnf
     state: present
   become: yes
-
 ```
 
 1. yumモジュールでdnfをインストール
@@ -73,7 +70,6 @@ ansible_python_interpreter=/usr/bin/python3
 ```
 
 上記のように、デフォルトでPython3.Xのインタプリタを使用している場合は、無理やり2.Xに戻す必要がある。
-
 
 ```yml:playbook.yml
 - name: Install dnf for Centos7
@@ -96,6 +92,8 @@ ansible_python_interpreter=/usr/bin/python3
   when:
     - ansible_distribution_major_version | float < 8
 ```
+
+その後のタスクでもインタプリタは2.Xになる。
 
 ## 最後に(Ansibleインタプリタ ベストプラクティス)
 
