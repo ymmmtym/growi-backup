@@ -1,5 +1,16 @@
 # Kubernetes
 
+## Minikube
+
+<https://minikube.sigs.k8s.io/docs/>
+
+### Ops
+
+```bash=
+minikube start
+minikube delete
+```
+
 ## Playground
 
 <https://training.play-with-kubernetes.com/kubernetes-workshop/>
