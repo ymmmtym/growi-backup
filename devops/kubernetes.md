@@ -1,5 +1,9 @@
 # Kubernetes
 
+## Playground
+
+<https://training.play-with-kubernetes.com/kubernetes-workshop/>
+
 ## Reference
 
 [入門 Kubernetes](https://y-ohgi.com/introduction-kubernetes/)
