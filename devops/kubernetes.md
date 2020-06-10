@@ -7,6 +7,8 @@
 ### Ops
 
 ```bash=
+minikube config set vm-driver virtualbox
+
 minikube start
 minikube delete
 ```
