@@ -63,6 +63,8 @@ curl -s https://registry.hub.docker.com/v1/repositories/${image}/tags | jq -r '.
 
 ## Dockerhub
 
+### Init
+
 1. puth image to dockerhub
 2. connect to github
 3. setting automated build
