@@ -2,8 +2,8 @@
 
 export url=$1
 
-# delete without readme
-ls | grep -v -E "^README.md" | xargs rm -rf
+# delete without ignore files
+ls | grep -v -E "^README\.md|^.*\.py|^requirements\.txt" | xargs rm -rf
 
 # get markdown files
 for path in $(curl -sL "${url}/_api/pages.list?path=/" | jq -r '.pages[].path'); do
