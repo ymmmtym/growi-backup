@@ -15,6 +15,18 @@ pg_dumpall -U ${username} > ${dumpfile}
 cat ${dumpfile} | psql -U ${username}
 ```
 
+console
+
+```python=
+from keywoo import app, db
+from keywoo.models.sites import Site
+from keywoo.models.users import User
+
+new_site = Site(name=name, url=url, user=user)
+db.session.add(new_site)
+db.session.commit()
+```
+
 ### Reference
 
 [[PostgreSQL] よく使うコマンドまとめ](https://dev.classmethod.jp/articles/postgresql-organize-command/)
