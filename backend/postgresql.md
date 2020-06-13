@@ -22,8 +22,8 @@ from keywoo import app, db
 from keywoo.models.sites import Site
 from keywoo.models.users import User
 
-new_site = Site(name=name, url=url, user=user)
-db.session.add(new_site)
+site = Site(name=name, url=url, user=user)
+db.session.add(site)
 db.session.commit()
 ```
 
