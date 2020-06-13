@@ -2,9 +2,8 @@
 
 ```bash=
 docker run -it \
-    --mount type=bind,source=$(pwd)/main.json,target=/mnt/main.json \
-    hashicorp/packer:latest build \
-    --var-file /mnt/main.json
+    --mount type=bind,source=$(pwd)/pkr,target=/mnt/pkr \
+    hashicorp/packer:latest build /mnt/pkr/main.json
 ```
 
 <https://hub.docker.com/r/hashicorp/packer>
