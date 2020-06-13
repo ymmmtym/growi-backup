@@ -2,10 +2,9 @@
 
 ```bash=
 docker run -it \
-    --mount type=bind,source=/absolute/path/to/test_docker_packer,target=/mnt/test_docker_packer \
+    --mount type=bind,source=$(pwd)/main.json,target=/mnt/main.json \
     hashicorp/packer:latest build \
-    --var-file /mnt/test_docker_packer/vars.json \
-    /mnt/test_docker_packer/template.json
+    --var-file /mnt/main.json
 ```
 
 <https://hub.docker.com/r/hashicorp/packer>
