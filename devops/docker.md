@@ -1,41 +1,33 @@
 # Docker
-## Install for centos
-### Install docker
-```bash=
-sudo yum -y update
-sudo yum -y install docker docker-compose
-```
-
-### Init setting
-#### add sudo authority for docker cmd
-```bash=
-sudo groupadd docker
-sudo gpasswd -a ${USER} docker
-sudo systemctl restart docker
-```
 
 ## Commands
+
 ### copy
+
 ```bash=
 docker cp -r ${container_id}:${input} ${output}
 ```
 
 ### run with mounting volumes
+
 ```bash=
 docker run -v /home/hoge/shared:/shared-it ubuntu /bin/bash
 ```
 
 ### show dangling (`<none>`) images
+
 ```bash=
 docker images -f "dangling=true"
 ```
 
 ### build with tag
+
 ```bash=
 docker build -t ${USER}/${tagname} .
 ```
 
 ### delete
+
 ```bash=
 docker container prune
 docker volume prune
@@ -59,7 +51,6 @@ search tags of the image
 ```bash=
 curl -s https://registry.hub.docker.com/v1/repositories/${image}/tags | jq -r '.[].name'
 ```
-
 
 ## Dockerhub
 
@@ -102,6 +93,10 @@ https-portal:
     STAGE: 'local' # Don't use production until staging works
     # FORCE_RENEW: 'true'
 ```
+
+### registory
+
+<https://hub.docker.com/_/registry/>
 
 ## Reference
 
