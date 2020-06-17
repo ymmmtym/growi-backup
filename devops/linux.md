@@ -155,6 +155,12 @@ nkf -Lw unix.txt > windows.txt
 nohup ${cmd} &
 ```
 
+### stress
+
+```bash=
+stress -c 1 -q
+```
+
 ## Reference
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>

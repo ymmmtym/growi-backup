@@ -13,6 +13,12 @@ minikube start
 minikube delete
 ```
 
+### Ingress
+
+```bash=
+minikube addons enable ingress
+```
+
 ## Playground
 
 <https://training.play-with-kubernetes.com/kubernetes-workshop/>
