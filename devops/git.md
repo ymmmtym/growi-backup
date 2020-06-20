@@ -85,6 +85,18 @@ git checkout . --
 git clean -df
 ```
 
+#### Stash
+
+```bash=
+git stash save # git stash
+git stash list
+git stash apply stash@{0}
+git stash drop stash@{0}
+git stash pop stash@{0}
+```
+
+<https://qiita.com/chihiro/items/f373873d5c2dfbd03250>
+
 ## Github
 
 issueをクローズする時、コミットメッセージの頭を以下の様にする。
@@ -114,3 +126,4 @@ good samples
 [誰にとってもわかりやすいGitのコミットメッセージを考える](https://www.tam-tam.co.jp/tipsnote/program/post16686.html)
 [GitFlowをやめて本番リリースが楽になった話](https://qiita.com/koyopro/items/b4569285efc22c6397c6)
 [Gitでよく使用するコマンドをGIFアニメで解説](https://coliss.com/articles/build-websites/operation/work/useful-git-commands-visualized.html)
+
