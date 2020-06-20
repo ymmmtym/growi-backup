@@ -33,3 +33,7 @@ minikube addons enable ingress
 [転職したらKubernetesだった件](https://qiita.com/yuanying/items/ceeeb7329a4fdc566546)
 [汎用プログラミング言語でKubernetesのYAMLを生成するcdk8sが発表されました！](https://dev.classmethod.jp/articles/end-yaml-with-cdk8s/)
 [[Kubernetes] オンプレでも GKE Like な Ingress を使うために 自作 Ingress Controller を実装してみた](https://cyberagent.ai/blog/pr/kubernetes/3758/)
+[Kubernetesのコードリーディングをする上で知っておくと良さそうなこと](https://medium.com/@bells17/things-you-should-know-about-reading-kubernetes-codes-933b0ee6181d)
+[CVE-2020-10749（Kubernetesの脆弱性）のPoCについての解説](https://knqyf263.hatenablog.com/entry/2020/06/19/063431)
+[Kubernetesにおけるマルチクラスタ関連手法の分類](https://amsy810.hateblo.jp/entry/2020/06/17/090000)
+
