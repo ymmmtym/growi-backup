@@ -1,13 +1,11 @@
 # Openstack
 
-Openstack provides IaaS service and Cloud environment.
+Openstack provides IaaS service ans Cloud environment.
 
 ## Components
 
 ### RabbitMQ
-
 ### DB
-
 ### Keystone
 
 #### Commands
@@ -18,7 +16,6 @@ openstack quota set --cores 8 admin
 ```
 
 #### Commands
-
 ##### Project
 
 |  Command  |  Action  |
@@ -38,7 +35,6 @@ openstack quota set --cores 8 admin
 |  openstack help role  |  show commands about role  |
 
 ### Glance
-
 #### Commands
 
 |  Command  |  Action  |
@@ -48,11 +44,13 @@ openstack quota set --cores 8 admin
 ### Neutron
 #### Commands
 ##### Floating IP
+
 |  Command  |  Action  |
 | ---- | ---- |
 |  openstack help ip floating  |  show commands about floating ip  |
 
 ##### Security Group
+
 |  Command  |  Action  |
 | ---- | ---- |
 |  openstack help security  |  show commands about security group  |
@@ -76,6 +74,6 @@ sed -i -e 's/#HOST_IP=w.x.y.z/HOST_IP=192.168.0.3/g' local.conf
 FORCE=yes ./stack.sh
 ```
 
-## Tutorial
-http://enakai00.hatenablog.com/entry/20140106/1388978670
+## Reference
 
+<http://enakai00.hatenablog.com/entry/20140106/1388978670>
