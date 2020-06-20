@@ -1,11 +1,13 @@
 # Openstack
 
-Openstack provides IaaS service ans Cloud environment.
+Openstack provides IaaS service and Cloud environment.
 
 ## Components
 
 ### RabbitMQ
+
 ### DB
+
 ### Keystone
 
 #### Commands
@@ -16,23 +18,29 @@ openstack quota set --cores 8 admin
 ```
 
 #### Commands
+
 ##### Project
+
 |  Command  |  Action  |
 | ---- | ---- |
 |  openstack help project  |  show commands about project  |
 
 ##### User
+
 |  Command  |  Action  |
 | ---- | ---- |
 |  openstack help user  |  show commands about user  |
 
 ##### Role
+
 |  Command  |  Action  |
 | ---- | ---- |
 |  openstack help role  |  show commands about role  |
 
 ### Glance
+
 #### Commands
+
 |  Command  |  Action  |
 | ---- | ---- |
 |  openstack help image  |  show commands about image  |
@@ -70,3 +78,4 @@ FORCE=yes ./stack.sh
 
 ## Tutorial
 http://enakai00.hatenablog.com/entry/20140106/1388978670
+
