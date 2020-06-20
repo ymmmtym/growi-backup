@@ -6,7 +6,7 @@ export url=$1
 ls | grep -v -E "^README\.md|^.*\.py|^requirements\.txt" | xargs rm -rf
 
 # get markdown files
-for path in $(curl -sL "${url}/_api/pages.list?path=/" | jq -r '.pages[].path'); do
+for path in $(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path'); do
     dir=$(echo ${path%/*} | cut -c 2- | nkf -w --url-input)
     file=$(echo "${path#*/}.md" | nkf -w --url-input)
     if [ ${dir} ];then
