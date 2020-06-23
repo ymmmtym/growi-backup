@@ -36,4 +36,6 @@ minikube addons enable ingress
 [Kubernetesのコードリーディングをする上で知っておくと良さそうなこと](https://medium.com/@bells17/things-you-should-know-about-reading-kubernetes-codes-933b0ee6181d)
 [CVE-2020-10749（Kubernetesの脆弱性）のPoCについての解説](https://knqyf263.hatenablog.com/entry/2020/06/19/063431)
 [Kubernetesにおけるマルチクラスタ関連手法の分類](https://amsy810.hateblo.jp/entry/2020/06/17/090000)
-
+[Kubernetes道場 22日目 - Ingressについて](https://cstoku.dev/posts/2018/k8sdojo-22/)
+[kubernetesにingressを導入する方法](https://qiita.com/Hirata-Masato/items/8e6b4536b6f1b23c5270)
+[Minikube で快適に Ingress を利用する](https://qiita.com/superbrothers/items/13d8ce012ef23e22cb74)
