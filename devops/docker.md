@@ -26,13 +26,14 @@ docker images -f "dangling=true"
 docker build -t ${USER}/${tagname} .
 ```
 
-### delete
+### Prune
 
 ```bash=
 docker container prune
 docker volume prune
 docker image prune
 docker network prune
+docker system prune
 docker system prune --volumes
 ```
 

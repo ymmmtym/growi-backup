@@ -164,3 +164,4 @@ stress -c 1 -q
 ## Reference
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>
+[Linux — source コマンドは何をしているのか > 実は環境をリロードするためのものではない](https://qiita.com/YumaInaura/items/00437e6ab14d96adb71f)
