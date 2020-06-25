@@ -67,4 +67,9 @@ Oracle Cloud: <https://www.oracle.com/jp/cloud/free/?intcmp=ocom-hpjp>
 ## Reference
 
 [ずっと無料で使えるクラウドの「Free Tier」主要サービスまとめ。2020年版](https://www.publickey1.jp/blog/20/free_tier2020.html)
-[]()
+https://github.com/terraform-providers/terraform-provider-oci/tree/master/examples
+https://community.oracle.com/docs/DOC-1024538
+https://qiita.com/feifo/items/2ca1f8451fb7f74d77c5
+https://qiita.com/kenwatan/items/81ef53a219bba81dad17
+https://qiita.com/minamijoyo/items/1f57c62bed781ab8f4d7
+
