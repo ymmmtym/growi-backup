@@ -22,14 +22,19 @@ jobs:
         sudo apt update -y
         sudo apt install -y jq nkf
 
-    - name: Check server responce
-      id: responce
+    - name: Befor check server responce
+      id: before
       run: |
-        echo "::set-output name=responce::$(curl -s ${URL} -o /dev/null -w %{http_code} --connect-timeout 60)"
+        echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
 
     - name: Run shell script
       run: bash .github/backup.sh ${URL}
-      if: ${{ steps.responce.outputs.responce }} == '200'
+      if: ${{ steps.before.outputs.code }} == '200'
+
+    - name: After check server responce
+      id: after
+      run: |
+        echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
 
     - name: Run git status
       id: status
@@ -43,10 +48,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Add changes at $(date "+DATE: %Y-%m-%d TIME: %H:%M:%S")" -a
-      if: ${{ steps.status.outputs.status }}
+      if: ${{ steps.status.outputs.status }} && ${{ steps.after.outputs.code }} == '200'
 
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-      if: ${{ steps.status.outputs.status }}
+      if: ${{ steps.status.outputs.status }} && ${{ steps.after.outputs.code }} == '200'
