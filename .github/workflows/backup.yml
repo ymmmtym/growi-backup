@@ -48,10 +48,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "Add changes at $(date "+DATE: %Y-%m-%d TIME: %H:%M:%S")" -a
-      if: ${{ steps.status.outputs.status }} && (${{ steps.after.outputs.code }} == '200')
+      if: ${{ steps.status.outputs.status }} != '' && ${{ steps.after.outputs.code }} == '200'
 
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-      if: ${{ steps.status.outputs.status }} && (${{ steps.after.outputs.code }} == '200')
+      if: ${{ steps.status.outputs.status }} != '' && ${{ steps.after.outputs.code }} == '200'
