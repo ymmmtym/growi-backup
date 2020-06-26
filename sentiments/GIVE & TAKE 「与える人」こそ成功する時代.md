@@ -1,1 +1,25 @@
-# Overview 「give & give」が成功ではない 与える人は成功するとは限らない 一番生産性が低い ## ３種類の人間 生産性の低い順位 - giver: 3位(ダントツ) - taker: 2位(短期的な成功) - matcher: 1位(takerに復讐できる) ## ２種類のgiver ### 搾取されるgiver 自己犠牲 ### 成功するgiver これがmatcherより生産性が高い win-win 誰にどうやってgiveするかが大事
+# Overview
+
+「give & give」が成功ではない
+与える人は成功するとは限らない
+一番生産性が低い
+
+## ３種類の人間
+
+生産性の低い順位
+
+- giver: 3位(ダントツ)
+- taker: 2位(短期的な成功)
+- matcher: 1位(takerに復讐できる)
+
+## ２種類のgiver
+
+### 搾取されるgiver
+
+自己犠牲
+
+### 成功するgiver
+
+これがmatcherより生産性が高い
+win-win
+誰にどうやってgiveするかが大事
