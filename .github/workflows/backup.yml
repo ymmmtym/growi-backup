@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - bugfix/**
 
 jobs:
   backup:
@@ -26,6 +27,7 @@ jobs:
       id: before
       run: |
         echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
+        echo $(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})
 
     - name: Run shell script
       run: bash .github/backup.sh ${URL}
@@ -35,6 +37,7 @@ jobs:
       id: after
       run: |
         echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
+        echo $(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})
 
     - name: Run git status
       id: status
@@ -51,8 +54,8 @@ jobs:
         git commit -m "Add changes at $(date "+DATE: %Y-%m-%d TIME: %H:%M:%S")"
       if: ${{ steps.status.outputs.status }} 
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-      if: ${{ steps.status.outputs.status }}
+    # - name: Push changes
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #   if: ${{ steps.status.outputs.status }}
