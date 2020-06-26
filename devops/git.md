@@ -65,7 +65,7 @@ git branch -d ${BRANCH}
 # same procedure for hotfix
 ```
 
-### Edit Commit
+#### Edit
 
 ```bash=
 git reset --hard HEAD^
@@ -122,6 +122,7 @@ good samples
 
 <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
 <https://github.com/github/gitignore>
+<https://github.com/azu/awesome-commit-english>
 [チーム開発におけるプルリクの作法](https://qiita.com/ikuwow/items/fb52a54c086398eb5b92)
 [誰にとってもわかりやすいGitのコミットメッセージを考える](https://www.tam-tam.co.jp/tipsnote/program/post16686.html)
 [GitFlowをやめて本番リリースが楽になった話](https://qiita.com/koyopro/items/b4569285efc22c6397c6)
