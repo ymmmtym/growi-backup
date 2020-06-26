@@ -5,6 +5,9 @@ export url=$1
 # delete without ignore files
 ls | grep -v -E "^README\.md|^.*\.py|^requirements\.txt" | xargs rm -rf
 
+# test
+test=$(ls fugafuga) || exit 1
+
 # get markdown files
 export pathes=$(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path' | sort) || exit 1
 
