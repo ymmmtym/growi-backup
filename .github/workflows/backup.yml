@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - master
-      - bugfix/**
 
 jobs:
   backup:
@@ -54,8 +53,8 @@ jobs:
         git commit -m "Add changes at $(date "+DATE: %Y-%m-%d TIME: %H:%M:%S")"
       if: ${{ steps.status.outputs.status }} 
 
-    # - name: Push changes
-    #   uses: ad-m/github-push-action@master
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #   if: ${{ steps.status.outputs.status }}
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+      if: ${{ steps.status.outputs.status }}
