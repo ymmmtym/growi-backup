@@ -1,4 +1,5 @@
 # Linux
+
 ## Makefile
 
 sample
@@ -15,6 +16,7 @@ createsuperuser:
 ```
 
 ## Terminal
+
 | Key         | Action            |
 | ----------- | ----------------- |
 | **alt**+f,b | move word by word |
@@ -24,6 +26,7 @@ createsuperuser:
 [ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
 
 ## Commands
+
 ### dmidecode
 
 show hardware info
@@ -129,6 +132,8 @@ ipmitool -I lanplus -H ${ipaddr} -U ${user} -P ${pwd} bmc reset warm
 
 ### getent
 
+show list of user, group...
+
 ```bash=
 getent passwd
 getent group
@@ -165,3 +170,4 @@ stress -c 1 -q
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>
 [Linux — source コマンドは何をしているのか > 実は環境をリロードするためのものではない](https://qiita.com/YumaInaura/items/00437e6ab14d96adb71f)
+[PXEブートとは？ PXE ブートの仕組み](http://www.putise.com/architecture/pxe-boot)
