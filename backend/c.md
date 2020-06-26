@@ -1,6 +1,1 @@
-# C
-## Compile
-```bash
-gcc -o hello hello.c
-./hello
-```
+# C ## Compile ```bash gcc -o hello hello.c ./hello ```
