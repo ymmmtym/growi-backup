@@ -26,6 +26,7 @@ jobs:
       id: before
       run: |
         echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
+        curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL}
 
     - name: Run shell script
       run: bash .github/backup.sh ${URL}
@@ -35,6 +36,7 @@ jobs:
       id: after
       run: |
         echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
+        curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL}
 
     - name: Run git status
       id: status
