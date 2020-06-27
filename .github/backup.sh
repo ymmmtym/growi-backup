@@ -1,13 +1,13 @@
 #!/bin/bash
 
-export url=$1
+url=$1
 
 # delete without ignore files
 ls | grep -v -E "^README\.md|^.*\.py|^requirements\.txt" | xargs rm -rf
 
 # get markdown files
-export pathes=$(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path') || exit 1
-export sorted_pathes=$(echo -e "${pathes}" | sort)
+pathes=$(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path') || exit 1
+sorted_pathes=$(echo -e "${pathes}" | sort)
 
 for path in ${sorted_pathes}; do
     dir=$(echo ${path%/*} | cut -c 2- | nkf -w --url-input)
