@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - debug/**
 
 jobs:
   backup:
@@ -30,7 +31,7 @@ jobs:
 
     - name: Run shell script
       run: bash .github/backup.sh ${URL}
-      if: ${{ steps.before.outputs.code }} == '200'
+      if: ${{ steps.before.outputs.code }} == '999'
 
     - name: After check server responce
       id: after
@@ -38,11 +39,18 @@ jobs:
         echo "::set-output name=code::$(curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL})"
         curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL}
 
+    - name: debug
+      run: |
+        echo -e "${before} ${after}"
+      env:
+        before: ${{ steps.before.outputs.code }}
+        after: ${{ steps.after.outputs.code }}
+
     - name: Run git status
       id: status
       run: |
         echo "::set-output name=status::$(git status -s)"
-      if: ${{ steps.after.outputs.code }} == '200'
+      if: ${{ steps.after.outputs.code }} == '999'
 
     - name: Add and commit files
       run: |
@@ -53,8 +61,8 @@ jobs:
         git commit -m "Add changes at $(date "+DATE: %Y-%m-%d TIME: %H:%M:%S")"
       if: ${{ steps.status.outputs.status }} 
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-      if: ${{ steps.status.outputs.status }}
+    # - name: Push changes
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #   if: ${{ steps.status.outputs.status }}
