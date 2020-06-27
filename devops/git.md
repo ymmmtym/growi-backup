@@ -118,10 +118,6 @@ good samples
 <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
 <https://github.com/dbader/readme-template>
 
-## Gitpod
-
-<https://github.com/gitpod-io/gitpod>
-
 ## Reference
 
 <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
@@ -132,3 +128,4 @@ good samples
 [GitFlowをやめて本番リリースが楽になった話](https://qiita.com/koyopro/items/b4569285efc22c6397c6)
 [Gitでよく使用するコマンドをGIFアニメで解説](https://coliss.com/articles/build-websites/operation/work/useful-git-commands-visualized.html)
 [Gitをもっと使いこなそう！ ちょっと上級な便利コマンド32選](https://liginc.co.jp/387757)
+[issueHunt](https://issuehunt.io/)
