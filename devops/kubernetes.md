@@ -19,6 +19,25 @@ minikube delete
 minikube addons enable ingress
 ```
 
+## Samples
+
+```bash=
+kubectl get svc
+kubectl get pods
+```
+
+
+```bash=
+kubectl apply -f service.yml
+kubectl apply -f deploy.yml
+```
+
+## Kompose
+
+```bash=
+kompose convert -f docker-compose.yml
+```
+
 ## Playground
 
 <https://training.play-with-kubernetes.com/kubernetes-workshop/>
