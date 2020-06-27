@@ -30,7 +30,7 @@ jobs:
 
     - name: Run shell script
       run: bash .github/backup.sh ${URL}
-      if: ${{ steps.before.outputs.code }} == '200'
+      if: steps.before.outputs.code == '200'
 
     - name: After check server responce
       id: after
@@ -42,7 +42,7 @@ jobs:
       id: status
       run: |
         echo "::set-output name=status::$(git status -s)"
-      if: ${{ steps.after.outputs.code }} == '200'
+      if: steps.after.outputs.code == '200'
 
     - name: Add and commit files
       run: |
