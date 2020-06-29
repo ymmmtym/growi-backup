@@ -6,11 +6,18 @@ LinuxにDockerをインストールするたびに、
 などをググって、Docker公式サイトより手動でインストールしていました。
 
 毎回インストールするのは手間なので、自動化したいと思っていた矢先、
-OSSで素晴らしいansible-galaxyがありましたので、紹介したいと思います。
+OSSで素晴らしいansible-galaxyを見つけましたので、紹介したいと思います。
 
-## 前提条件
+**使用するansible-galaxy**
+
+<https://galaxy.ansible.com/geerlingguy/docker>
+<https://github.com/geerlingguy/ansible-role-docker>
+
+**前提条件**
 
 - ansibleの基礎が理解できていること
 
-https://galaxy.ansible.com/geerlingguy/docker
-https://github.com/geerlingguy/ansible-role-docker
+## Ansible Playbookを書いてみる
+
+VirtualBox上にUbuntu18.04のVMを作成します。
+Vagrantを用いて、Provisioning ToolとしてAnsibleを使用し、そのPlaybookでDockerをインストールします。
