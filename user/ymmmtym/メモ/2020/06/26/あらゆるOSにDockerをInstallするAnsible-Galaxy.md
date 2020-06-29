@@ -1,1 +1,1 @@
-# あらゆるOSにDockerをInstallするAnsible-Galaxy
+null
