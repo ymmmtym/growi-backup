@@ -100,7 +100,7 @@ Markdown License badges <https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba>
 
 original ![color:ff69b4](https://img.shields.io/badge/color-ff69b4-ff69b4.svg?longCache=true)
 
-gitpod [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/<org(user)>/<repo>)
+gitpod [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/${org(user)}/${repo})
 
 ## Discogs
 
