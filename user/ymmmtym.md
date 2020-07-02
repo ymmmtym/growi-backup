@@ -17,18 +17,23 @@ $lsx(/user/ymmmtym)
 ## Roadmap
 
 <https://github.com/kamranahmedse/developer-roadmap>
-https://qiita.com/shuntaro_tamura/items/e1a20e33c57c71679688
-https://wp-p.info/
+<https://qiita.com/shuntaro_tamura/items/e1a20e33c57c71679688>
+<https://wp-p.info/>
+
+## Learning
+
+<https://learningbox.online/>
+<http://gacco.org/>
+<https://connpass.com/>
+<https://www.doorkeeper.jp/>
+<https://japan.googleblog.com/>
+<http://www.ieice-hbkb.org/portal/doc_index.html>
+<http://www.jusnet.co.jp/business/index.shtml>
 
 ## tmp
 
 <https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes>
 <https://gitter.im/>
-
-# API
-
-## Tools
-
 <https://qiita.com/os1ma/items/9eadcfb91fa26af762be>
 
 ## Trello
@@ -79,6 +84,7 @@ done
 <https://github.com/weseek/growi>
 
 ### API
+
 ```bash=
 curl -sL "https://ymmmtym.growi.cloud/_api/pages.list?path=/" | jq '.pages'
 
@@ -100,14 +106,13 @@ gitpod [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://
 
 ### Favorite list
 
--  https://www.discogs.com/ja/seller/alain.v2/profile
--  https://www.discogs.com/ja/user/GESSCOM
--  https://www.discogs.com/ja/seller/Boom_Service/profile
--  https://www.discogs.com/ja/seller/bordentownrecords/profile
--  https://www.discogs.com/ja/seller/1207vinyl.dk/profile
--  https://www.discogs.com/ja/user/beatboprecords
-
+<https://www.discogs.com/ja/seller/alain.v2/profile>
+<https://www.discogs.com/ja/user/GESSCOM>
+<https://www.discogs.com/ja/seller/Boom_Service/profile>
+<https://www.discogs.com/ja/seller/bordentownrecords/profile>
+<https://www.discogs.com/ja/seller/1207vinyl.dk/profile>
+<https://www.discogs.com/ja/user/beatboprecords1>
 
 ### Temporary list
 
--  https://www.discogs.com/ja/user/Analogy_Mountain
+<https://www.discogs.com/ja/user/Analogy_Mountain>
