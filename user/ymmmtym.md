@@ -29,6 +29,7 @@ $lsx(/user/ymmmtym)
 <https://japan.googleblog.com/>
 <http://www.ieice-hbkb.org/portal/doc_index.html>
 <http://www.jusnet.co.jp/business/index.shtml>
+<https://www.qwiklabs.com/?locale=ja>
 
 ## tmp
 
