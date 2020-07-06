@@ -21,8 +21,6 @@ createsuperuser:
 | ----------- | ----------------- |
 | **alt**+f,b | move word by word |
 
-### Reference
-
 [ターミナル 作業効率化 tips集](https://qiita.com/shizuma/items/86470203ac8ea6b4d53f)
 
 ## Commands
