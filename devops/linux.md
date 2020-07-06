@@ -171,3 +171,4 @@ stress -c 1 -q
 <https://github.com/nsuzuki7713/shell-script-tutorial>
 [Linux — source コマンドは何をしているのか > 実は環境をリロードするためのものではない](https://qiita.com/YumaInaura/items/00437e6ab14d96adb71f)
 [PXEブートとは？ PXE ブートの仕組み](http://www.putise.com/architecture/pxe-boot)
+[【Linux】コマンドまとめ 〜コマンド名の由来を添えて〜](https://qiita.com/taji-taji/items/0b4bcccf097371bc143c)
