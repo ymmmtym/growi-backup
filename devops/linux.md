@@ -105,6 +105,8 @@ ssh rsa key generate
 ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ""
 ```
 
+[プログラマーがSSH周りで知っておくと良いこと](https://qiita.com/syou007/items/9bbc1b50b9608651c390)
+
 ### showmount
 
 show dir which is enable to mount
