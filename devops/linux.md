@@ -107,13 +107,17 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ""
 
 [プログラマーがSSH周りで知っておくと良いこと](https://qiita.com/syou007/items/9bbc1b50b9608651c390)
 
-### showmount
+### mount
 
 show dir which is enable to mount
 
 ```bash=
 showmount -e ${ipaddr}
 ```
+
+#### Reference
+
+[マウントとシンボリックリンク何が違うの](https://life-is-command.com/ln-or-mount/)
 
 ### KVM
 
