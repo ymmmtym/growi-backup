@@ -170,6 +170,12 @@ nohup ${cmd} &
 stress -c 1 -q
 ```
 
+### yes
+
+```bash
+yes | apt-get install jq
+```
+
 ## Reference
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>
