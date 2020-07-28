@@ -15,6 +15,11 @@
 | /proc/scsi/scsi       | SCSIデバイスの情報                                |
 | /proc/bus/usb/devices | USBデバイスの情報                                 |
 
+### systemd
+
+<http://equj65.net/tech/systemd-manage/#:~:text=systemctl%E3%81%A8service%E3%81%AE%E9%81%95%E3%81%84,%E3%81%97%E3%81%8B%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%86%E4%BA%8B%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%80%82>
+<https://dev.classmethod.jp/articles/service-control-use-systemd/>
+
 ### Makefile
 
 sample
@@ -247,6 +252,9 @@ ls
 
 <https://www.atmarkit.co.jp/ait/articles/1806/29/news037.html>
 
+### pgrep
+
+<https://www.atmarkit.co.jp/ait/articles/1707/28/news010.html>
 
 ## Reference
 
