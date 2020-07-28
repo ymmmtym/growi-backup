@@ -235,6 +235,21 @@ ps aux
 ps -l
 ```
 
+### split
+
+```bash
+split text result # 1000(default)
+ls
+# text resultaa resultab
+```
+
+### man
+
+### tac
+
+### mv
+
+
 ## Reference
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>
