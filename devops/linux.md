@@ -243,11 +243,9 @@ ls
 # text resultaa resultab
 ```
 
-### man
+### watch
 
-### tac
-
-### mv
+<https://www.atmarkit.co.jp/ait/articles/1806/29/news037.html>
 
 
 ## Reference
