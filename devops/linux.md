@@ -1,6 +1,21 @@
 # Linux
 
-## Makefile
+## Design
+
+### /proc
+
+| path                  | content                                           |
+| --------------------- | ------------------------------------------------- |
+| /proc/cmdline         | OSがブートされたときに、kernelに渡されたパラメータ |
+| /proc/cpuinfo         | CPUの情報                                         |
+| /proc/meminfo         | メモリの情報                                      |
+| /proc/ioports         | I/Oポートの情報                                   |
+| /proc/interrupts      | IRQの情報                                         |
+| /proc/bus/pci/devices | PCIデバイスの情報 ( /proc/pci は廃止 )            |
+| /proc/scsi/scsi       | SCSIデバイスの情報                                |
+| /proc/bus/usb/devices | USBデバイスの情報                                 |
+
+### Makefile
 
 sample
 
@@ -13,6 +28,14 @@ migrate:
 
 createsuperuser:
     docker-compose run --rm web python3 manage.py createsuperuser
+```
+
+example
+
+```bash
+make makemigration
+make migrate
+make createsuperuser
 ```
 
 ## Terminal
@@ -173,7 +196,7 @@ stress -c 1 -q
 ### yes
 
 ```bash
-yes | apt-get install jq
+yes y | apt-get install jq
 ```
 
 ## Reference
