@@ -199,6 +199,42 @@ stress -c 1 -q
 yes y | apt-get install jq
 ```
 
+### tr
+
+replace lower to upper
+
+```bash
+tr a-z A-Z < fileA
+```
+
+### cp
+
+```bash
+cp -r dir1 dir2
+cp -R dir1 dir2 # same as
+```
+
+### date
+
+```bash
+date -u "+%A %B %C %D %H %M %c %x"
+```
+
+### history
+
+```bash
+echo $HISTFILE
+history -d 100
+```
+
+### ps
+
+```bash
+ps -ef
+ps aux
+ps -l
+```
+
 ## Reference
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>
