@@ -261,3 +261,4 @@ ls
 [PXEブートとは？ PXE ブートの仕組み](http://www.putise.com/architecture/pxe-boot)
 [【Linux】コマンドまとめ 〜コマンド名の由来を添えて〜](https://qiita.com/taji-taji/items/0b4bcccf097371bc143c)
 [Linuxコマンドの代替コマンド「ncdu」「htop」「tldr」「jq」「fd」とは？](https://news.mynavi.jp/article/20200626-1069025/)
+[リダイレクトでアンドマーク'&'がやっていること](https://qiita.com/ichi_taro3/items/d71e411685ad1bcd9e78)
