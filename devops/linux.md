@@ -143,8 +143,6 @@ show dir which is enable to mount
 showmount -e ${ipaddr}
 ```
 
-#### Reference
-
 [マウントとシンボリックリンク何が違うの](https://life-is-command.com/ln-or-mount/)
 
 ### KVM
