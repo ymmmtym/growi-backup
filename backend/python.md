@@ -1,12 +1,14 @@
 # Python
+
 ## Roles of `__init__.py`
 
--  show directory has python script
--  initialize when import modules
+- show directory has python script
+- initialize when import modules
 
 読み込むmodule名と実行ファイル名が同一の場合エラーが起きるので注意
 
 ## Class
+
 By describing "class: Meta", you can define something that is not defined in forms.ModelForm.
 
 ```python
@@ -20,10 +22,12 @@ class CreateGroupForm(forms.Form):
 ```
 
 ## Methods
+
 ### Special methods
--  __init__
--  __str__
--  __bool__
+
+- __init__
+- __str__
+- __bool__
 
 etc..
 
@@ -33,14 +37,13 @@ For str etc., when the function str () is called, you can specify the value to r
 
 ```python
 class User():
- 
     def __init__(self, name="", age=0):
         self.name = name
         self.age = age
- 
+
     def say_hello(self):
         print("Hello, my name is " + self.name)
- 
+
     def __str__(self):
         return "name:" + self.name + " age:" + str(self.age)
 
@@ -57,23 +60,28 @@ bool(user)
 ```
 
 ## Modules
+
 **__future__**
 apply to ver2,3
+
 ```python
 from __future__ import division, print_function, absolute_import, unicode_literals
 ```
 
 ## Jupiter
+
 convert notebook to html
+
 ```bash
 notebook=notebook.ipynb
 jupyter nbconvert --to html ${notebook}
 ```
 
 run notebook
+
 ```bash
 jupyter notebook --ip=* --no-browser
-``` 
+```
 
 ## Julia
 
@@ -103,7 +111,11 @@ vars(obj)
 
 [Python Docs](https://docs.python.org/3/)
 [Pythonチートシート](https://ids.itmedia.jp/dl/atmarkit_ebook63_python.pdf?bpc=37be53089ed88f95d035b7fe1aa0a0a364f318cc8b293f9a74bb8abcb41d0e71)
+[Python 3 エンジニア認定データ分析試験 PyQクエスト対応](https://docs.pyq.jp/column/python_exam_pydata.html)
+[Pythonプログラミング入門](https://utokyo-ipp.github.io/index.html)
+[Automate the Boring Stuff with Python](https://automatetheboringstuff.com/#toc)
 <https://github.com/GoogleCloudPlatform/python-docs-samples>
 
 ## Samples
+
 <script src="https://gist-it.appspot.com/https://github.com/ymmmtym/engneer-tutorial/blob/master/scripts/backend/python/lib/scraping.py"></script>
