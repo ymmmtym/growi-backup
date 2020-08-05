@@ -254,6 +254,10 @@ ls
 
 <https://www.atmarkit.co.jp/ait/articles/1707/28/news010.html>
 
+### rsync
+
+<https://qiita.com/BlueEventHorizon/items/209af1c9beaff669cd68>
+
 ## Reference
 
 <https://github.com/nsuzuki7713/shell-script-tutorial>
