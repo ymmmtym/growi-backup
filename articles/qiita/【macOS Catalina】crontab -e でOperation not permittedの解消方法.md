@@ -56,7 +56,7 @@ tar: Failed to clean up compressor
 
 1. 「システム環境設定 > セキュリティとプライバシー > プライバシー > フルディスクアクセス」
 2. +をクリック
-3.  [command] + [shift] + [G] で`/usr/sbin/cron`を入力
+3. [command] + [shift] + [G] で`/usr/sbin/cron`を入力
 
 以上で解決できました。
 
