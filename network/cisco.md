@@ -2,7 +2,7 @@
 
 ## Commands
 
-```
+```ios
 enable
 disable
 
@@ -21,7 +21,7 @@ exit
 
 ### How to Connect on Linux
 
-```bash=
+```bash
 sudo apt-get install openconnect
 sudo openconnect yourvpn.example.com
 ```
