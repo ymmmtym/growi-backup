@@ -7,6 +7,7 @@
 ## VPN
 
 <https://github.com/SoftEtherVPN/SoftEtherVPN>
+<https://qiita.com/ryo0916/items/9fe094dce7e0d9e2e222>
 
 ## EVPN
 
