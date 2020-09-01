@@ -52,9 +52,11 @@ curl -s "https://trello.com/1/members/${user}/boards?key=${key}&token=${token}" 
 
 # boards
 curl -s "https://trello.com/1/boards/$(curl -s "https://trello.com/1/members/${user}/boards?key=${key}&token=${token}" | jq -r '.[].id')/lists?key=${key}&token=${token}" | jq .
+```
 
+example
 
-# example
+```bash
 for board in $(curl -s "https://trello.com/1/members/${user}/boards?key=${key}&token=${token}" | jq -r ".[].id"); do
     for list in $(curl -s "https://trello.com/1/boards/${board}/lists?key=${key}&token=${token}" | jq -r ".[].id"); do
         for card in $(curl -s "https://trello.com/1/lists/${list}/cards?key=${key}&token=${token}" | jq .); do
@@ -86,7 +88,7 @@ done
 
 ### API
 
-```bash=
+```bash
 curl -sL "https://ymmmtym.growi.cloud/_api/pages.list?path=/" | jq '.pages'
 
 # example
@@ -109,6 +111,8 @@ gitpod [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://
 vagrant@web:~$ whoami
 vagrant
 ```
+
+<https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md>
 
 ## Discogs
 
