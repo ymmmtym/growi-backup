@@ -6,9 +6,9 @@ $lsx(/user/ymmmtym)
 
 ## Public Pages
 
-<https://gitpress.io/u/1192>
-<https://scrapbox.io/hyukihisa378-59128284/Scrapbox%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9>
-<https://ymmmtym.kibe.la/>
+[gitpress](https://gitpress.io/u/1192/)
+[scrapbox](https://scrapbox.io/ymmmtym/)
+[kibe](https://ymmmtym.kibe.la/)
 
 ## Monitoring
 
