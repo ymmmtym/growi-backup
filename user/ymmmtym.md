@@ -103,6 +103,13 @@ original ![color:ff69b4](https://img.shields.io/badge/color-ff69b4-ff69b4.svg?lo
 
 gitpod [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/${org(user)}/${repo})
 
+## markdown
+
+```console
+vagrant@web:~$ whoami
+vagrant
+```
+
 ## Discogs
 
 ### Favorite list

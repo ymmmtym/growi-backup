@@ -21,11 +21,14 @@ minikube addons enable ingress
 
 ## Samples
 
+get
+
 ```bash=
 kubectl get svc
 kubectl get pods
 ```
 
+apply
 
 ```bash=
 kubectl apply -f service.yml
@@ -59,3 +62,4 @@ kompose convert -f docker-compose.yml
 [kubernetesにingressを導入する方法](https://qiita.com/Hirata-Masato/items/8e6b4536b6f1b23c5270)
 [Minikube で快適に Ingress を利用する](https://qiita.com/superbrothers/items/13d8ce012ef23e22cb74)
 [もし今1からKubernetesを勉強するとしたらどうやって勉強するか](https://blux.hatenablog.com/entry/2020/07/30/235040)
+[Oracle Cloud Free Tierで0円KubernetesをTerraform+Ansibleで自動構築する](https://qiita.com/gashirar/items/a9f73bf945d201c80cfa)
