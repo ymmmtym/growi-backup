@@ -113,18 +113,3 @@ vagrant
 ```
 
 <https://github.com/highlightjs/highlight.js/blob/master/SUPPORTED_LANGUAGES.md>
-
-## Discogs
-
-### Favorite list
-
-<https://www.discogs.com/ja/seller/alain.v2/profile>
-<https://www.discogs.com/ja/user/GESSCOM>
-<https://www.discogs.com/ja/seller/Boom_Service/profile>
-<https://www.discogs.com/ja/seller/bordentownrecords/profile>
-<https://www.discogs.com/ja/seller/1207vinyl.dk/profile>
-<https://www.discogs.com/ja/user/beatboprecords1>
-
-### Temporary list
-
-<https://www.discogs.com/ja/user/Analogy_Mountain>
