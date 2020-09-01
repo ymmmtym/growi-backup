@@ -8,7 +8,7 @@ $lsx(/user/ymmmtym)
 
 [gitpress](https://gitpress.io/u/1192/)
 [scrapbox](https://scrapbox.io/ymmmtym/)
-[kibe](https://ymmmtym.kibe.la/)
+[kibela](https://ymmmtym.kibe.la/)
 
 ## Monitoring
 
