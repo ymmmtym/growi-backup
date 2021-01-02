@@ -3,7 +3,7 @@
 url=$1
 
 # delete without ignore files
-ls | grep -v -E "^README\.md|^.*\.py|^requirements\.txt" | xargs rm -rf
+ls | grep -v -E "^README\.md|^.*\.sh|^.*\.py|^requirements\.txt" | xargs rm -rf
 
 # get markdown files
 pathes=$(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path') || exit 1

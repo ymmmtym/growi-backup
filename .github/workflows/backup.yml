@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       URL: "https://ymmmtym.growi.cloud"
+      TZ: "Asia/Tokyo"
     if: contains(github.event.head_commit.message, '[ci skip]') == false
 
     steps:
@@ -29,7 +30,7 @@ jobs:
         curl -s -o /dev/null -I -w %{http_code} --connect-timeout 60 ${URL}
 
     - name: Run shell script
-      run: bash .github/backup.sh ${URL}
+      run: bash backup.sh ${URL}
       if: steps.before.outputs.code == '200'
 
     - name: After check server responce
@@ -46,7 +47,6 @@ jobs:
 
     - name: Add and commit files
       run: |
-        export TZ="Asia/Tokyo"
         git add .
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
@@ -57,4 +57,5 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
       if: ${{ steps.status.outputs.status }}
