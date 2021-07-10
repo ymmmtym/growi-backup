@@ -459,7 +459,7 @@ $$
 \dot{x} & = \sigma(y-x) \
 \dot{y} & = ho x - y - xz \
 \dot{z} & = -eta z + xy
-\end{align}
+nd{align}
 $$
 
 
@@ -478,7 +478,7 @@ $$
   \mathbf{i} & \mathbf{j} & \mathbf{k} \
   rac{\partial X}{\partial u} & rac{\partial Y}{\partial u} & 0 \
   rac{\partial X}{\partial v} & rac{\partial Y}{\partial v} & 0 \
- \end{vmatrix}
+ nd{vmatrix}
 $$
 
 
