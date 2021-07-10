@@ -3,13 +3,17 @@
 url=$1
 
 # delete without ignore files
-ls | grep -v -E "^README\.md|^.*\.sh|^.*\.py|^requirements\.txt" | xargs rm -rf
+ls | grep -v -E "^README\.md|^.*\.sh|^.*\.py|^requirements\.txt" | xargs rm -rf {}
 
 # get markdown files
-pathes=$(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path') || exit 1
-sorted_pathes=$(echo -e "${pathes}" | sort)
+paths=$(curl -sL "${url}/_api/pages.list?limit=10000&path=/" | jq -r '.pages[].path' | sort) || exit 1
 
-for path in ${sorted_pathes}; do
+PREV_IFS=$IFS
+IFS="
+"
+
+for path in ${paths}; do
+    IFS=$PREV_IFS
     dir=$(echo ${path%/*} | cut -c 2- | nkf -w --url-input)
     file=$(echo "${path#*/}.md" | nkf -w --url-input)
     if [ ${dir} ];then
