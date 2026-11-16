@@ -1,13 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ],
-  "packageRules": [
-    {
-      "description": "Automerge non-major updates once CI passes",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    }
+    "github>ymmmtym/.github"
   ]
 }
